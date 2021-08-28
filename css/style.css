@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;0,700;1,600&display=swap');
+
+@font-face {
+    font-family: alien;
+    src: url(../fonts/alienleague.ttf);
+}
+
+@font-face {
+    font-family: zonapro;
+    src: url(../fonts/zonapro_light.otf);
+}
+
+
+@font-face {
+    font-family: zonapro_bold;
+    src: url(../fonts/zonapro_bold.otf);
+}
+
+
+@font-face {
+    font-family: myriad;
+    src: url(../fonts/myriad.ttf);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: url(../images/fundo_70.png);
+    animation: bg 40s infinite;
+    background-attachment: fixed;
+    font-family: zonapro;
+}
+
+
+@keyframes bg {
+
+    0%,
+    100% {
+        background-position: top;
+    }
+
+    50% {
+        background-position: bottom;
+    }
+}
+
+
+.animate-blur {
+    animation: move-blur 2s ease-in-out;
+    transform: translate(0%, 0%);
+}
+
+@keyframes move-blur {
+    0% {
+        transform: translate(-0%, 0%);
+        opacity: 0;
+        filter: blur(4px);
+    }
+}
+
+.animate-off-left {transition: 6s;
+transform: translate(-4000%,0%)}
+.animate-on-left {
+    animation: move-left 1s ease-in-out;
+    transform: translate(0%, 0%);
+}
+
+@keyframes move-left {
+    0% {
+        transform: translate(-400%, 0%);
+        opacity:0;
+    }
+}
+
+
+.animate-right {
+    animation: move-right 1s ease-in-out;
+    transform: translate(0%, 0%);
+}
+
+@keyframes move-right {
+    0% {
+        transform: translate(400%, 0%)
+    }
+}
+
+.background-header,
+.bg {
+    background:
+        linear-gradient(2deg, #000000, #181818);
+    width: 100%;
+    height: 100%;
+}
+
+
+.bold {
+    font-family: zonapro_bold;
+    font-weight: bold;
+}
+
+.gold {
+    color: rgb(255, 216, 42);
+}
+
+
+main h1 {
+
+    font-size: 6rem;
+}
+
+main h6 {
+    font-size: 2rem;
+}
+
+header h1 {
+    font-size: 6rem;
+}
+
+header h4 {
+    font-size: 4rem;
+}
+
+.btn-primario {
+    margin: 4% 0%;
+    font-family: zonapro_bold;
+    padding: 2% 10%;
+    border-radius: 4px;
+}
+
+.number {
+    background-color: rgb(83, 71, 2, 0.2);
+    font-size: 1px;
+    font-size: 2vw;
+}
+
+
+
+
+
+
+
+/** CONFIGURAÇÕES BUTTON PRIMARIA DO SITE **/
+.btn-primario {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    border: 2px solid;
+    transition:3s;
+}
+
+.btn-primario:focus,
+.btn-primario.focus {
+    color: black;
+    background-color: rgb(95, 95, 95);
+    border-color: rgb(177, 177, 177);
+}
+
+.btn-primario:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.btn-primario:active,
+.btn-primario.active,
+.open>.dropdown-toggle.btn-primario {
+    color: black;
+    background-color: gold;
+    border-color: rgb(80, 82, 0);
+}
+
+.btn-primario:active:hover,
+.btn-primario.active:hover,
+.open>.dropdown-toggle.btn-primario:hover,
+.btn-primario:active:focus,
+.btn-primario.active:focus,
+.open>.dropdown-toggle.btn-primario:focus,
+.btn-primario:active.focus,
+.btn-primario.active.focus,
+.open>.dropdown-toggle.btn-primario.focus {
+    color: black;
+    background-color: rgb(80, 82, 0);
+    border-color: rgb(80, 82, 0);
+}
+
+.btn-primario:active,
+.btn-primario.active,
+.open>.dropdown-toggle.btn-primario {
+    background-image: none;
+}
+
+.btn-primario.disabled:hover,
+.btn-primario[disabled]:hover,
+fieldset[disabled] .btn-primario:hover,
+.btn-primario.disabled:focus,
+.btn-primario[disabled]:focus,
+fieldset[disabled] .btn-primario:focus,
+.btn-primario.disabled.focus,
+.btn-primario[disabled].focus,
+fieldset[disabled] .btn-primario.focus {
+    background-color: rgb(255, 230, 120);
+    border-color: rgb(80, 82, 0);
+}
+
+.btn-primario .badge {
+    color: rgb(255, 230, 120);
+    background-color: black;
+}
+
+/** FIM CONFIGURAÇÕES BUTTON PRIMARIA DO SITE **/
+
+
+
+
+
+.form {
+    color: black;
+    font-weight: bold;
+    background: linear-gradient(0deg, rgb(255, 190, 50) 0%, rgb(255, 231, 151) 52%, rgb(255, 196, 70) 100%);
+    border-radius: 40px;
+}
+
+
+
+
+.form-control {
+    background-color: black;
+}
+
+#videos h1 {
+    font-size: 2px;
+    font-size: 3vw;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+    min-width: 100px;
+    max-height: 300px;
+    max-width: 400px;
+
+
+    background-color: rgb(0, 0, 0);
+    border: 3px solid gold;
+}
+
+
+#parcelas div {
+    float: left;
+
+    width: 100px;
+    text-align: center;
+}
+
+#legenda div {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 221.98px) {}
+
+@media (max-width: 331.98px) {}
+
+@media (max-width: 385.98px) {}
+
+@media (max-width: 424.98px) {}
+
+@media (max-width: 575.98px) {
+    main h1 {
+        font-size: 3rem;
+    }
+
+    main h3 {
+        font-size: 1.2rem;
+    }
+
+    header h4 {
+        font-size: 1.4rem;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+
+}
+
+
+@media (max-width: 767.98px) {
+    #videos h1 {
+        font-size: 2px;
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .number {
+        background-color: rgb(83, 71, 2, 0.2);
+        font-size: 1px;
+        font-size: 4vw;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main h3 {
+        font-size: 0.5rem;
+    }
+
+    .btn-primario {
+        font-size: 1rem;
+    }
+
+    header h4 {
+        font-size: 1.4rem;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+}
+
+
+
+@media (max-width: 1199.98px) {}
+
+
+
+@media (max-width: 1399.98px) {
+    header h4 {
+        font-size: 1.4rem;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+}
+
+
+
+@media (min-width: 2230.98px) {}
